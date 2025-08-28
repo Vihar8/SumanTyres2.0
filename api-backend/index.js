@@ -10,9 +10,16 @@ const path = require('path');
 app.use(cors()) // Allow all origins by default
 
 // Additional CORS configuration
+// app.use(
+// 	cors({
+// 		origin:"http://localhost:5173", // Allow requests from this origin (adjust the URL as per your frontend)
+// 		credentials:true, // Allow credentials (cookies, authorization headers) to be included in requests
+// 	})
+// )
+
 app.use(
 	cors({
-		origin:"http://localhost:5173", // Allow requests from this origin (adjust the URL as per your frontend)
+		origin:"https://suman-tyres2.vercel.app", // Allow requests from this origin (adjust the URL as per your frontend)
 		credentials:true, // Allow credentials (cookies, authorization headers) to be included in requests
 	})
 )
