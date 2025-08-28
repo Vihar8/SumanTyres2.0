@@ -9,9 +9,9 @@ import appIcon from "/assets/adminIcons/appIcon.svg";
 import subverify from "/assets/adminIcons/subverify.svg";
 import reportIcon from "/assets/adminIcons/reportIcon.svg";
 import cmsIcon from "/assets/adminIcons/cmsIcon.svg";
-import plants from "/assets/adminIcons/plants.svg";
-import adminuser from "/assets/adminIcons/AdminUser.svg";
-import manageIcon from "/assets/adminIcons/manageIcon.svg";
+import tyres from "/assets/adminIcons/wheel.png";
+import engineIcon from "/assets/adminIcons/engine-oil.png";
+import batteryIcon from "/assets/adminIcons/battery.png";
 import useAuth from "../../hooks/useAuth";
 import { userTypes } from "../../utils/commonEnum";
 
@@ -41,17 +41,17 @@ const SidebarMenu = ({ menuCollapse }) => {
         {
           menusName: "Tyre",
           path: "tyre-list",
-          icons: <img src={plants} className={`${classes.iconSize}`} />,
+          icons: <img src={tyres} className={`${classes.iconSize}`} />,
         },
         {
             menusName: "Engine Oil",
             path: "engineoil-list",
-            icons: <img src={adminuser} className={`${classes.iconSize}`} />,
+            icons: <img src={engineIcon} className={`${classes.iconSize}`} />,
         },
         {
             menusName: "Battery",
             path: "battery-list",
-            icons: <img src={adminuser} className={`${classes.iconSize}`} />,
+            icons: <img src={batteryIcon} className={`${classes.iconSize}`} />,
         },
     ];
 
