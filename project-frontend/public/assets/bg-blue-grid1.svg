@@ -1,0 +1,35 @@
+<svg width="1440" height="397" viewBox="0 0 1440 397" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1_518)">
+<path d="M1508 0H-9V397H1508V0Z" fill="#0B2742"/>
+<mask id="mask0_1_518" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-9" y="0" width="1518" height="397">
+<path d="M-9 0H1508V397H-9V0Z" fill="#0B2742"/>
+</mask>
+<g mask="url(#mask0_1_518)">
+<path d="M942.54 -8.24463L-2264.46 235.917" stroke="#0D2E4D" stroke-width="2"/>
+<path d="M1588.82 -8.24463L-2264.48 235.917" stroke="#0D2E4D" stroke-width="2"/>
+<path d="M1946.24 22.8677L-2264.48 235.917" stroke="#0D2E4D" stroke-width="2"/>
+<path d="M1946.24 76.9741L-2264.48 235.916" stroke="#0D2E4D" stroke-width="2"/>
+<path d="M1946.24 130.746L-2264.48 235.918" stroke="#0D2E4D" stroke-width="2"/>
+<path d="M1946.24 184.513L-2264.48 235.915" stroke="#0D2E4D" stroke-width="2"/>
+<path d="M1946.24 237.945L-2264.48 235.917" stroke="#0D2E4D" stroke-width="2"/>
+<path d="M1946.24 448.966L-2264.48 235.916" stroke="#0D2E4D" stroke-width="2"/>
+<path d="M1946.24 394.859L-2264.48 235.918" stroke="#0D2E4D" stroke-width="2"/>
+<path d="M1946.24 341.088L-2264.48 235.916" stroke="#0D2E4D" stroke-width="2"/>
+<path d="M1946.24 287.321L-2264.48 235.918" stroke="#0D2E4D" stroke-width="2"/>
+<path d="M1241.47 -8.24463V395.731" stroke="#0D2E4D" stroke-width="2"/>
+<path d="M982.317 -8.24463V395.731" stroke="#0D2E4D" stroke-width="2"/>
+<path d="M776.89 -8.24463V395.731" stroke="#0D2E4D" stroke-width="2"/>
+<path d="M602.014 -8.24463V395.731" stroke="#0D2E4D" stroke-width="2"/>
+<path d="M457.688 -8.24463V397" stroke="#0D2E4D" stroke-width="2"/>
+<path d="M332.325 -8.24463V395.731" stroke="#0D2E4D" stroke-width="2"/>
+<path d="M221.71 -8.24463V395.731" stroke="#0D2E4D" stroke-width="2"/>
+<path d="M122.684 -8.24463V395.731" stroke="#0D2E4D" stroke-width="2"/>
+<path d="M39.4597 -8.24463V395.731" stroke="#0D2E4D" stroke-width="2"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1_518">
+<rect width="1517" height="397" fill="white" transform="translate(-9)"/>
+</clipPath>
+</defs>
+</svg>

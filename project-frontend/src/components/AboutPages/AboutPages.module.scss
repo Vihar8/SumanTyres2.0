@@ -1,0 +1,15 @@
+.pagesTitle {
+  @apply font-semibold uppercase text-mediumtext text-primary-Color2 mb-5;
+}
+
+.pagesSubTitle {
+  @apply font-normal text-normaltext text-primary-Color2 mb-7;
+}
+
+.textHighlight {
+  @apply font-semibold;
+}
+
+.listStyles {
+  @apply list-disc pl-8;
+}

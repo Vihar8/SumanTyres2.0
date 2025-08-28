@@ -1,0 +1,471 @@
+ .pageSection {
+    @apply w-full;
+    // & > * {
+    //   transform: translateY(-12%);
+    // }
+  }
+
+  .pagePara1 {
+    @apply absolute 
+      text-primary-Color2 text-center 
+      text-xs sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 
+      top-4 sm:top-9 md:top-12 lg:top-16 xl:top-28
+      right-2 sm:right-6 md:right-12 lg:right-16 xl:right-20;
+  }
+  
+//   .pagePara2 {
+//     @apply absolute rounded-full font-semibold bg-primary-Color1 px-6 py-2 shadow-md text-primary-Color6;
+//   }
+
+.pagePara2 {
+    @apply absolute rounded-full font-semibold bg-primary-Color1 shadow-md text-primary-Color6 
+      text-[8px] sm:text-xs md:text-sm lg:text-base xl:text-xl
+      px-2 sm:px-2 md:px-4 lg:px-6 xl:px-8
+      py-1 sm:py-2 md:py-2 lg:py-3 xl:py-3
+      bottom-2 sm:bottom-2 md:bottom-3 lg:bottom-5 xl:bottom-12
+      left-8 sm:left-12 md:left-20 lg:left-24 xl:left-36;
+  }
+  
+
+  //Smartsolar
+
+/* Smart Solar Styles */
+
+.smartSolarContainer {
+    @apply w-screen flex justify-center items-center bg-[#1F467D] min-h-28;
+  }
+  
+  .smartSolarWrapper1 {
+    @apply flex justify-around items-center flex-wrap;
+  }
+  
+  .smartSolarSection {
+    @apply flex flex-row items-center justify-center;
+    /* margin-left: 1px !important; */
+  }
+  
+  .smartSolarContent {
+    @apply flex flex-col justify-center;
+  }
+  
+  .smartSolarSvg {
+    @apply w-16 h-16 pr-2.5;
+  }
+  
+  .smartSolarText1 {
+    @apply text-[25px] text-[#e8ecf1] leading-[37.5px] tracking-normal;
+  }
+  
+  .smartSolarText2 {
+    @apply text-[20px] text-[#e8ecf1] leading-[37.5px] tracking-normal;
+  }
+  
+
+
+
+
+
+
+//   .smartSolarContainer {
+//     @apply w-screen flex justify-center items-center bg-primary-Color1 min-h-28;
+//   }
+  
+//   .smartSolarWrapper1 {
+//     @apply flex justify-evenly items-center flex-wrap;
+//   }
+  
+//   .smartSolarSection {
+//     @apply flex flex-row items-center;
+//   }
+  
+//   .smart-solar-content {
+//     @apply flex flex-col justify-center;
+//   }
+  
+//   .smart-solar-svg {
+//     @apply w-16 h-16;
+//   }
+  
+//   .smart-solar-text1 {
+//     @apply text-[25px] text-primary-Color6 leading-[37.5px] tracking-[0%];
+//   }
+
+//   .smart-solar-text2 {
+//     @apply text-[20px] text-primary-Color6 leading-[37.5px] tracking-[0%];
+//   }
+
+
+  
+  .digitalHeading1 {
+    @apply text-[48px] text-primary-Color2 leading-[60.48px] tracking-[0%] text-center;
+  }  
+  .digitalHeading2 {
+    @apply text-[28px] text-[#696969] leading-[35.28px] tracking-[0%] text-center;
+  }
+
+  .checkBtn {
+    @apply p-4 m-2 text-white text-sm font-bold items-center justify-center bg-[#1F467D] rounded-full shadow-md;
+}
+
+.checkspan{
+    @apply text-black font-bold text-2xl;
+  }
+
+    /* Check Digital Solar Section */
+    .checkSolar {
+        @apply max-w-full px-10 mx-10 mt-5 flex flex-wrap items-center justify-center md:justify-between text-base
+               py-3 border-[#676767] rounded-full 
+               bg-gradient-to-r from-[#8BB8E8]/20 to-[#04C19C]/20;
+        border: 1px solid #C4C5CF;
+    
+    }
+
+    /* Footer */
+    .footer {
+        @apply mx-7 text-start bg-white p-6;
+      }
+      
+      .footer h3 {
+        @apply text-3xl font-bold text-[#253D32];
+      }
+      
+      .footer p {
+        @apply text-[#0F0F0F] font-normal text-lg mt-2 max-w-full;
+      }
+
+
+
+  
+  .traditionalSolarContainer {
+    @apply flex flex-row gap-20 justify-center items-center;
+  }
+  
+  
+  .boxContainer {
+    @apply relative min-w-[620px] min-h-[803px] flex flex-col items-center justify-center  mt-9;
+  }
+  
+  .svgBackground {
+    @apply absolute w-full h-full top-0 left-0;
+  }
+  
+  .textOverlay {
+    @apply absolute text-center px-5;
+  }
+  
+  .cardHeading1 {
+    @apply text-[32px] font-bold text-[#1F467D] ;
+  }
+  
+  .digitalSubheading {
+    @apply text-[18px] text-[#333] mt-1 font-semibold;
+  }
+  
+  .sectionContainer {
+    @apply p-5;
+    
+    &:nth-child(odd) {
+      @apply bg-white rounded-[50px] shadow-md; 
+    }
+  }
+  
+  
+  .sectionTitle {
+    @apply text-[26px] leading-[32.76px] font-semibold;
+  }
+  
+  .sectionText {
+    @apply text-[18px] leading-[22.68px] text-[#444] mt-1 font-semibold;
+  }
+  
+  .energyOffsetting {
+    @apply font-bold;
+  }
+  
+  .netMetering {
+    @apply font-normal;
+  }
+  
+
+
+
+  //digital 
+
+  @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Custom Styles
+@layer components {
+  .app-container {
+    @apply flex justify-center items-center min-h-screen p-5 flex-wrap;
+  }
+
+  .parent-box-container {
+    @apply flex gap-10 justify-center flex-wrap max-w-full border-primary-Color3;
+  }
+
+  .parent-box {
+    @apply w-[48%] max-w-[583px] h-auto rounded-[30px] border-1 border-[#C4C5CF] shadow-lg text-center flex flex-col overflow-hidden bg-gradient-to-r from-blue-200/20 to-teal-200/20;
+
+    &:nth-child(2) {
+      @apply bg-blue-100;
+    }
+  }
+
+  .parent-title {
+    @apply text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] 
+           font-bold text-center text-primary-Color2 leading-tight;
+  }
+  
+  .parent-subtitle {
+    @apply text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 
+           font-normal text-[#696969] mt-2 leading-normal;
+  }
+  
+
+//   .parent-title {
+//     @apply text-[32px] font-bold text-center text-primary-Color2 pt-4 leading-6;
+//   }
+
+  .parent-title1 {
+    @apply text-[32px] font-bold text-center text-primary-Color1 pt-4 leading-6;
+  }
+
+//   .parent-subtitle {
+//     @apply text-[18px] font-normal text-[#696969] mt-2 mb-4;
+//   }
+
+  .divider-line {
+    @apply bg-gray-500 h-[2px] w-full mb-3 opacity-50;
+  }
+
+  .child-box-container {
+    @apply flex flex-col items-center w-full;
+  }
+
+  .child-box {
+    @apply w-full h-auto flex flex-col justify-center items-center text-center text-[0.9rem] rounded-[50px] p-4;
+
+    &:not(:last-child) {
+      @apply border-gray-300;
+    }
+  }
+
+  .child-title {
+    @apply text-[20px] font-bold mb-0.5 text-black;
+  }
+
+  .child-text {
+    @apply text-[15px] font-normal text-black px-1;
+  }
+
+  .odd-box {
+    @apply bg-white;
+  }
+}
+
+@media (max-width: 900px) {
+  .parent-box {
+    @apply w-full;
+  }
+}
+
+
+
+  // project Details css
+
+  .ProjectDetailsParent {
+    @apply w-full my-20 justify-start ;
+  }
+
+  .projectDetailsCard {
+    @apply w-11/12 sm:w-11/12 md:w-11/12 lg:w-3/4 xl:w-3/4 h-auto rounded-full shadow-md border-1 border-[#C4C5CF] mx-auto justify-start pt-4 pb-2 sm:py-6 md:py-6;
+  }
+  
+  .stepTitle {
+    @apply text-[#030303] font-bold text-2xl sm:text-3xl md:text-4xl ml-4 sm:ml-6 md:ml-8;
+  }
+  
+  .stepDescription {
+    @apply text-[#030303] text-sm sm:text-base md:text-lg ml-4 sm:ml-6 md:ml-8 mt-2 mb-4 sm:mb-6 md:mb-8;
+  }
+  
+  .formContainer {
+    @apply mt-2 sm:mt-4 px-4 sm:px-6 md:px-8;
+  }
+  
+  .inputBox {
+    @apply bg-white rounded-full border-1 border-[#C4C5CF] py-3 px-4 text-gray-500 w-full;
+  }
+  
+  
+  
+  .projectDetailsCard2 {
+    @apply rounded-3xl shadow-md border-1 border-primary-Color1 
+      w-11/12 sm:w-11/12 md:w-11/12 lg:w-1/2 xl:w-1/2 
+      max-h-min mx-auto;
+  }
+  
+  
+
+  .columnLayout {
+    @apply flex flex-row;
+  }
+  
+  .insideCard1 {
+    @apply flex flex-col items-center justify-center text-center;
+  }
+
+  .insideCard2 {
+    @apply flex flex-row text-[8px] text-[#A8A8AD] items-center justify-center text-center leading-[8.56px];
+  }
+  
+  .insideCard3 {
+    @apply flex flex-col place-items-center justify-center text-center;
+  }
+  
+  .billContainer {
+    @apply flex flex-col items-start gap-1;
+  }
+  
+  .billAmount {
+    @apply text-[#4E4F56] text-[10px] font-bold ;
+  }  
+  
+  .progressBarContainer {
+    @apply w-3/5 max-w-[800px] mt-5;
+  }
+  
+  .progressBar {
+    @apply h-[35px] bg-primary-Color1 text-primary-Color1;
+  }
+  
+
+
+
+  
+
+
+//old css
+
+.counterSeparate {
+    @apply flex flex-col mt-5 mb-14;
+  }
+  
+  .counterHeading {
+    @apply text-h6 lg:text-h5 font-bold text-primary-Color2 text-left relative text-2xl;
+  
+    &::before {
+      @apply absolute h-1 w-16 -bottom-3 bg-primary-Color1;
+      content: "";
+    }
+  }
+  
+  .counterDivide {
+    // @apply grid md:flex md:justify-between grid-cols-2 mt-9 gap-5;
+    @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-9 gap-5;
+  }
+  
+  .counterBox {
+    @apply flex flex-col items-center text-center relative;
+  
+    &::before {
+      @apply absolute right-[-134px] w-full top-[24%] lg:border-3 border-dotted border-primary-Color1;
+      content: "";
+  
+      &:last-child {
+        @apply border-0;
+      }
+    }
+  
+    // &::after {
+    //     @apply absolute;
+    //     content: "";
+  
+    //     &:first-child {
+    //         @apply w-3 h-3 xl:right-[45px] top-[45px] rounded-full bg-primary-Color1;
+    //     }
+  
+    //     &:last-child {
+    //         @apply w-3 h-3 xl:right-[155px] top-[45px] rounded-full bg-primary-Color1;
+    //     }
+    // }
+  }
+  
+  .counterTitle {
+    @apply text-h6 lg:text-h4 font-bold text-primary-Color2 mt-7;
+  }
+  
+  .counterSubTitle {
+    @apply text-mediumtext lg:text-h6 font-normal text-primary-Color2 mt-1;
+  }
+  
+  .counterLogo {
+    @apply z-[9] min-w-[70px] min-h-[70px] lg:min-w-[100px] lg:min-h-[100px] w-[70px] h-[70px] lg:w-[100px] lg:h-[100px];
+  }
+  
+  .highlightText {
+    @apply text-mediumtext md:text-largetext lg:text-subtitle2 relative inline-block text-primary-Color2;
+  
+    &::before {
+      @apply absolute h-1 w-12 md:w-16 left-[100px] md:left-auto md:right-0 -bottom-2 bg-primary-Color1;
+      content: "";
+    }
+  }
+  
+  .counterBottom {
+      @apply mt-8 flex flex-col md:flex-row items-center gap-8 md:gap-14;
+  }
+
+  .fullpage {
+    @apply w-full p-4 md:p-6 lg:p-8;
+  }
+
+  .fg {
+    @apply mx-auto;
+  }
+
+  .fullpage1 {
+    @apply mb-8;
+  }
+
+  .counterHeading1 {
+    @apply text-gray-600 max-w-2xl my-5 text-xl;
+  }
+  
+.counterHeading3 {
+  @apply grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-full;
+}
+  .main {
+    @apply bg-white rounded-lg overflow-hidden shadow-md
+    hover:shadow-xl transition-shadow duration-200 w-full;
+  }
+  
+  .portalContainer {
+    @apply p-6;
+  }
+  
+  .portalHeader {
+    @apply flex justify-between items-center;
+  }
+  
+  .portalInfo {
+    @apply flex items-center gap-3;
+  }
+  
+  .portalName {
+    @apply font-medium text-lg text-gray-900;
+  }
+  
+  .portalCount {
+    @apply text-2xl font-bold text-gray-900;
+  }
+  
+  .imgggg{
+    @apply flex items-center w-full max-h-[600px];
+  }
+  
+  .sliderbtn{
+    @apply pb-10;
+  }

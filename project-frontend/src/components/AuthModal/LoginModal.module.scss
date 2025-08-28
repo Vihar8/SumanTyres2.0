@@ -1,0 +1,56 @@
+.textLabel {
+  @apply mb-1 block font-medium text-normaltext text-primary-Color2;
+}
+
+.passwordText {
+  @apply text-smalltext md:text-normaltext text-primary-Color2 font-normal cursor-pointer;
+}
+
+.captchaText {
+  @apply text-smalltext text-other-Gray3;
+}
+
+.registerText {
+  @apply text-primary-Color4 font-medium;
+}
+
+.resendText {
+  @apply text-primary-Color1 text-normaltext font-medium;
+}
+
+.registerDivide {
+  @apply text-normaltext text-primary-Color2 font-normal mt-5 flex justify-center items-center gap-2;
+}
+
+.workDivide {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-3 mt-2;
+}
+
+.mobileText {
+  @apply text-normaltext font-normal text-primary-Color2;
+}
+
+.loginBox {
+  @apply p-10 border-1 border-solid border-other-Gray5 rounded;
+  box-shadow: 0px 4px 4px 0px #0000001a;
+}
+
+.eyeIcon {
+  @apply text-lg text-other-Gray6;
+}
+
+.formBtn {
+  @apply flex items-center justify-end mt-5;
+}
+
+.registerTitle {
+  @apply mb-8 text-h4 text-primary-Color2 font-medium;
+}
+
+.subTitle {
+  @apply mb-6 text-mediumtext font-semibold text-primary-Color3;
+}
+
+.registerGrid {
+  @apply flex justify-center my-10;
+}

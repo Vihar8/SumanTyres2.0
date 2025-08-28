@@ -1,0 +1,83 @@
+.dashboardDivide {
+  @apply grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-y-5 gap-x-4;
+}
+
+.dashboardBox {
+  @apply flex flex-col text-left relative px-4 pt-5 rounded-lg pb-11 shadow-badge;
+}
+
+.dashboardTitle {
+  @apply text-h6 lg:text-h5 2xl:text-h4 font-semibold text-primary-Color2;
+}
+
+.dashboardSubTitle {
+  @apply text-normaltext md:text-smalltext 2xl:text-mediumtext font-semibold text-primary-Color2 mt-1;
+}
+
+.dashboardKwp {
+  @apply text-smalltext 2xl:text-normaltext font-normal;
+}
+
+.moreInfo {
+  @apply flex gap-1 justify-center absolute bottom-0 left-0 right-0 rounded-bl-lg rounded-br-lg text-extrasmalltext leading-7 font-semibold text-primary-Color2;
+}
+
+.bgImg {
+  @apply absolute top-0 right-0;
+}
+
+.infoBox {
+  @apply bg-primary-Color6 rounded-xl py-5 px-4 flex flex-col gap-8 shadow-badge;
+}
+
+.infoHeading {
+  @apply text-normaltext text-primary-Color2 font-semibold;
+}
+
+.cityBox {
+  @apply flex items-center gap-3 justify-between;
+}
+
+.cityTitle {
+  @apply text-normaltext font-normal text-primary-Color2;
+}
+
+.cityCount {
+  @apply text-normaltext font-semibold text-primary-Color1;
+}
+
+.cityDivide {
+  @apply flex flex-col gap-7;
+}
+
+.graphHeading {
+  @apply text-[11px] font-normal text-primary-Color2 leading-7;
+}
+
+.totalUser {
+  @apply inline-flex flex-row w-full justify-between border-r-2 pr-3 border-other-Gray5;
+}
+
+.dots {
+  @apply w-2 h-2 min-w-2 min-h-2 inline-block rounded-full;
+}
+
+.dotsGaps {
+  @apply flex items-center gap-2 md:justify-between;
+}
+
+.graphBox {
+  @apply bg-primary-Color6 rounded-xl flex flex-col gap-2 shadow-badge;
+}
+
+.graphHeader {
+  @apply py-3 px-4 border-b-1 border-other-Gray5;
+}
+
+.horizontalDivider{
+  @apply w-full h-px bg-[#C4C5CF] my-5;
+}
+
+.sectiontitle{
+  @apply font-bold text-2xl;
+}
