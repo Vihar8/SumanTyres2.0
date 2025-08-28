@@ -20,9 +20,10 @@ app.use(cors()) // Allow all origins by default
 app.use(
 	cors({
 		origin:"https://suman-tyres2.vercel.app", // Allow requests from this origin (adjust the URL as per your frontend)
-		credentials:true, // Allow credentials (cookies, authorization headers) to be included in requests
-	})
-)
+	methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true, // if you send cookies / auth headers
+  })
+);
 
 const PORT = process.env.PORT || 3000;
 
