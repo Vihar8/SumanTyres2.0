@@ -10,7 +10,7 @@ import subverify from "/assets/adminIcons/subverify.svg";
 import reportIcon from "/assets/adminIcons/reportIcon.svg";
 import cmsIcon from "/assets/adminIcons/cmsIcon.svg";
 import tyres from "/assets/adminIcons/wheel.png";
-import engineIcon from "/assets/adminIcons/engine-oil.png";
+import engineIcon from "/assets/adminIcons/fuel.png";
 import batteryIcon from "/assets/adminIcons/battery.png";
 import useAuth from "../../hooks/useAuth";
 import { userTypes } from "../../utils/commonEnum";
