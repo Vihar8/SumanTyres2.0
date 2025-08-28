@@ -19,7 +19,7 @@ app.use(cors()) // Allow all origins by default
 
 app.use(
 	cors({
-		origin:"https://suman-tyres2.vercel.app", // Allow requests from this origin (adjust the URL as per your frontend)
+		origin:"https://sumantyresandbatteryservice.vercel.app", // Allow requests from this origin (adjust the URL as per your frontend)
 	methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true, // if you send cookies / auth headers
   })
