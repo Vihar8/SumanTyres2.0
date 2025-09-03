@@ -2,7 +2,6 @@ import React from "react";
 import { Typography, Stack } from "@mui/material"; // Import Typography and Stack
 
 const TyreLoader = () => {
-	console.log("loader loaded");
   return (
     <div className="flex justify-center items-center w-full h-full">
       <Stack alignItems="center" justifyContent="center" spacing={2}>
