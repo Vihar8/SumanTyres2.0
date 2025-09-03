@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Search, Filter, ChevronDown, ChevronUp, ShoppingCart, Battery } from 'lucide-react';
 import { batterys } from '../../api/common';
+import TyreLoader from '../../commoncomponents/Loadable/TyreLoader';
 
 const BatteryListing = () => {
   const [batteries, setBatteries] = useState([]); // API data
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredBatteries, setFilteredBatteries] = useState([]);
+  const [loading, setLoading] = useState(false)
   const [selectedFilters, setSelectedFilters] = useState({
     brand: [],
     type: [],
@@ -17,6 +19,7 @@ const BatteryListing = () => {
 
   useEffect(() => {
         const fetchBattery = async () => {
+          setLoading(true)
           try {
             const response = await batterys({}); // API call
             if (Array.isArray(response)) {
@@ -26,7 +29,9 @@ const BatteryListing = () => {
             }
           } catch (err) {
             console.error("Error fetching battery:", err);
-          }
+          } finally {
+      setLoading(false); // ✅ always reset loading
+    }
         };
         fetchBattery();
       }, []);
@@ -240,7 +245,9 @@ const BatteryListing = () => {
         </div>
 
         {/* Products grid */}
-        {filteredBatteries.length > 0 ? (
+         {loading  ? (
+<TyreLoader />
+) :  ( filteredBatteries.length > 0 ? (
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {filteredBatteries.map(product => (
               <div
@@ -297,7 +304,7 @@ const BatteryListing = () => {
               Clear Filters
             </button>
           </div>
-        )}
+        ))}
       </div>
     </div>
   );

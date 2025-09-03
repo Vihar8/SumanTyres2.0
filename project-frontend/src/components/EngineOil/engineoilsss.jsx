@@ -304,11 +304,13 @@ import React, { useState, useEffect } from 'react';
 import { Search, Filter, ChevronDown, ChevronUp, ShoppingCart, Droplet } from 'lucide-react';
 import axios from 'axios'; // 👈 use axios or fetch
 import { oils } from '../../api/common';
+import TyreLoader from '../../commoncomponents/Loadable/TyreLoader';
 
 const EngineOils = () => {
   const [oilProducts, setOilProducts] = useState([]);   // initially empty
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredOils, setFilteredOils] = useState([]);
+  const [loading, setLoading] = useState(false)
   const [selectedFilters, setSelectedFilters] = useState({
     brand: [],
     type: [],
@@ -319,6 +321,7 @@ const EngineOils = () => {
   const [activeProduct, setActiveProduct] = useState(null);
   useEffect(() => {
       const fetchOils = async () => {
+        setLoading(true);
         try {
           const response = await oils({}); // API call
           if (Array.isArray(response)) {
@@ -328,7 +331,9 @@ const EngineOils = () => {
           }
         } catch (err) {
           console.error("Error fetching tyres:", err);
-        }
+        } finally {
+      setLoading(false); // ✅ always reset loading
+    }
       };
       fetchOils();
     }, []);
@@ -525,7 +530,9 @@ const EngineOils = () => {
         </div>
         
         {/* Products grid */}
-        {filteredOils.length > 0 ? (
+         {loading  ? (
+<TyreLoader />
+) :  ( filteredOils.length > 0 ? (
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {filteredOils.map(product => (
               <div 
@@ -580,7 +587,7 @@ const EngineOils = () => {
               Clear Filters
             </button>
           </div>
-        )}
+        ))}
       </div>
     </div>
   );

@@ -1,15 +1,16 @@
 import React from "react";
 import { Typography, Stack } from "@mui/material"; // Import Typography and Stack
 
-const Loaders = () => {
+const TyreLoader = () => {
+	console.log("loader loaded");
   return (
     <div className="flex justify-center items-center w-full h-full">
       <Stack alignItems="center" justifyContent="center" spacing={2}>
-        {/* <img
-          src="/assets/geda-bg.png" // Replace with your image path
+        <img
+          src="/assets/tyreloading.png" // Replace with your image path
           alt="Loading"
-          className="animate-slow-spin w-20 h-20"
-        /> */}
+          className="animate-slow-spin w-42 h-24"
+        />
         <Typography 
           component="div" 
           style={{ 
@@ -35,11 +36,11 @@ const Loaders = () => {
         }
 
         .animate-slow-spin {
-          animation: slow-spin 1.75s linear infinite;
+          animation: slow-spin 1.15s linear infinite;
         }
       `}</style>
     </div>
   );
 };
 
-export default Loaders;
+export default TyreLoader;

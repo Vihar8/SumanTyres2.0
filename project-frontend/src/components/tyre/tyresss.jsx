@@ -8,6 +8,7 @@ import {
   ShipWheel,
 } from "lucide-react";
 import { tyres } from "../../api/common";
+import TyreLoader from "../../commoncomponents/Loadable/TyreLoader";
 
 const Tyresss = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -18,24 +19,30 @@ const Tyresss = () => {
     type: [],
   });
   const [showFilters, setShowFilters] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [activeProduct, setActiveProduct] = useState(null);
 
   // Fetch tyres once
   useEffect(() => {
-    const fetchTyres = async () => {
-      try {
-        const response = await tyres({}); // API call
-        if (Array.isArray(response)) {
-          const activeTyres = response.filter((tyre) => tyre.status === true);
-          setAllTyres(activeTyres);
-          setFilteredTyres(activeTyres);
-        }
-      } catch (err) {
-        console.error("Error fetching tyres:", err);
+  const fetchTyres = async () => {
+    setLoading(true);
+    try {
+      const response = await tyres({}); // API call
+      if (Array.isArray(response)) {
+        const activeTyres = response.filter((tyre) => tyre.status === true);
+        setAllTyres(activeTyres);
+        setFilteredTyres(activeTyres);
       }
-    };
-    fetchTyres();
-  }, []);
+    } catch (err) {
+      console.error("Error fetching tyres:", err);
+    } finally {
+      setLoading(false); // ✅ always reset loading
+    }
+  };
+
+  fetchTyres();
+}, []);
+
 
   // Extract unique brands and types from all tyres
   const brands = [...new Set(allTyres.map((product) => product.brand))];
@@ -198,7 +205,10 @@ const Tyresss = () => {
         </div>
 
         {/* Products grid */}
-        {filteredTyres.length > 0 ? (
+        {loading  ? (
+<TyreLoader />
+) :  (
+        filteredTyres.length > 0 ? (
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {filteredTyres.map((product) => (
               <div
@@ -262,7 +272,7 @@ const Tyresss = () => {
               Clear Filters
             </button>
           </div>
-        )}
+        ))}
       </div>
     </div>
   );
